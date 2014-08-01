@@ -1,0 +1,18 @@
+apply plugin: "eclipse"
+apply plugin: "java"
+
+task wrapper(type: Wrapper) { gradleVersion = "2.0" }
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'org.springframework.batch:spring-batch-core:3.0.1.RELEASE'
+  compile 'org.springframework.batch:spring-batch-infrastructure:3.0.1.RELEASE'
+  compile 'org.springframework:spring-jdbc:4.0.6.RELEASE'
+
+  testCompile 'junit:junit:4.11'
+  testCompile 'org.hsqldb:hsqldb:2.3.2'
+  testCompile 'org.springframework.batch:spring-batch-test:3.0.1.RELEASE'
+}

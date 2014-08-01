@@ -1,0 +1,1 @@
+Update `MinimumJobConfig.java` to switch between the two ways of building the job.
